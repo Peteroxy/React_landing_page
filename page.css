@@ -1,0 +1,244 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+h6{
+    color:#D8D8D8
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s none;
+}
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: #fb774b;
+}
+.star{
+    padding: 10px 0;
+}
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+button:hover{
+    background-color: #3a3833;
+}
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: white;
+    transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color: coral;
+}
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+/* .container img:hover{
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+} */
+/* mobile nav */
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+#bar:hover,
+#bar.active{
+    color: #fff;
+}
+@media only screen and (max-width: 991px){
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: #fb774b;
+    }
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color: #fff;
+    }
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+
+    }
+}
+
+#banner{
+    background-image: url(img/recipe4.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner h4{
+    color: #D8D8D8;
+}
+#banner h1{
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 48px;
+    font-weight: 200;
+    margin: 0 auto;
+    animation:typing 3s steps(200, end);
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* display: none; */
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+#banner button{
+    background-color: #fb774b;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+#banner button:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.product{
+    cursor: pointer;
+    /* margin-bottom: 2rem; */
+}
+.product img{
+    transition: 0.3s all;
+    height: 50%;
+    border-radius: 30px;
+    object-fit: contain;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    background: #fb774b;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    border-radius: 20px;
+}
+.product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+#features h3,
+#features h4,
+#features h5,
+#features p,
+#features h6{
+    color:white;
+}
+.div1 button{
+    background-color: #fb774b;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.div1 button:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.div1 h4
+{
+    color: #fff;
+}
+.div2 p
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+.dev button{
+    background-color: #fb774b;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.dev button:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.dev-details p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+
+
+}
+.image img{
+    height: 60%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+#about{
+    margin-top: -60px;
+}

@@ -158,6 +158,13 @@ button:hover{
     from { width: 0 }
     to { width: 100% }
 }
+@media only screen and (max-width: 700px){
+    #banner h1{
+       animation: none;
+       font-size: 20px;
+    }
+}
+
 #banner button{
     background-color: #fb774b;
     font-weight: bolder;
